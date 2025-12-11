@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ===================== Nav.jsx ========================================================== */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .navLinks button {
+  text-transform: capitalize !important;
+  font-size: 1.1rem;
   display: flex;
-  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+.navLinks button {
+  color: #222222 !important;
 }
 
-.App-link {
-  color: #61dafb;
+/* .navLinks button:first-child {
+  color: rgb(0, 100, 250) !important;
+} */
+
+/* .navLinks button:hover {
+  color: rgb(0, 100, 250) !important;
+  transition: 0.5s;
+} */
+
+.padding {
+  padding: 60px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar {
+  background-color: #fff !important;
+  color: rgb(0, 100, 250) !important;
+}
+
+.btnNav {
+  background-color: rgb(0, 100, 250) !important;
+  color: #fff !important;
+  text-transform: capitalize !important;
+  font-size: 1.2rem !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  padding: 7px 30px !important;
+  border-radius: 7px !important;
+}
+
+.btnHover1:hover {
+  background-color: rgb(100, 150, 250) !important;
+  color: #fff !important;
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+.btnHover2:hover {
+  color: rgb(0, 100, 250) !important;
+  background-color: #fff !important;
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+  .btnNav {
+    display: none !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navLinks button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .btnNav {
+    display: none !important;
+  }
+
+  .navLinks button {
+    font-size: 0.9rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  .navbarMain {
+    padding: 15px 0px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+
+  .ReviewImage {
+    width: 12rem !important;
+  }
+}
+
+/* ============================================================================== */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .mainTitle {
+    font-size: 6.5rem !important;
+    width: 70% !important;
+  }
+
+  .ReviewImage {
+    width: 12rem !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .mainTitle {
+    font-size: 6.5rem !important;
+    width: 80% !important;
+  }
+
+  .ReviewImage {
+    width: 12rem !important;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+
+  .mainContent {
+    margin-top: -4rem !important;
+  }
+
+  .mainTitle {
+    font-size: 5rem !important;
+    width: 30rem !important;
+  }
+
+  .ReviewImage {
+    width: 10rem !important;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+  .mainContent {
+    margin-top: -4rem !important;
+  }
+
+  .mainTitle {
+    font-size: 3.2rem !important;
+    width: 18rem !important;
+  }
+
+  .mainBtn1 {
+    font-size: 1rem !important;
+    padding: 10px 20px !important;
+    display: block !important;
+    margin-top: 2rem !important;
+  }
+
+  .mainBtn2 {
+    font-size: 1rem !important;
+    padding: 10px 18px !important;
+    display: block !important;
+    margin-top: 1.5rem !important;
+    margin-left: 0rem !important;
+  }
+
+  .toursPrice {
+    margin-left: 10rem !important;
+  }
+
+  .ReviewImage {
+    width: 12rem !important;
   }
 }
