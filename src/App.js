@@ -3,14 +3,15 @@ import Main from "./components/Main";
 import Destinations from "./components/Destinations";
 import Tours from "./components/Tours";
 import Blog from "./components/Blog";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Pricing from "./components/Pricing";
 import Pages from "./components/Pages";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import RickyMorty from "./components/RickyMorty";
 
 function App() {
   return (
     <>
-      <Router>
+      {/* <Router>
         <Switch>
           <Route path="/blog">
             <Blog />
@@ -31,7 +32,9 @@ function App() {
             <Main />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
+
+      <RickyMorty></RickyMorty>
     </>
   );
 }
