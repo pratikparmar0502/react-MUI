@@ -6,12 +6,12 @@ import Blog from "./components/Blog";
 import Pricing from "./components/Pricing";
 import Pages from "./components/Pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import RickyMorty from "./components/RickyMorty";
+// import RickyMorty from "./components/RickyMorty";
 
 function App() {
   return (
     <>
-      {/* <Router>
+      <Router>
         <Switch>
           <Route path="/blog">
             <Blog />
@@ -32,9 +32,9 @@ function App() {
             <Main />
           </Route>
         </Switch>
-      </Router> */}
+      </Router>
 
-      <RickyMorty></RickyMorty>
+      {/* <RickyMorty></RickyMorty> */}
     </>
   );
 }
